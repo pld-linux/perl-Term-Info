@@ -25,14 +25,15 @@ This module is a wrapper for tput command, that allows you to get
 information about terminal control codes.
 
 %description -l pl
-Ten modu³ jest otoczk± dla wywo³ywania polecenia tput, która pozwala uzyskaæ
-informacje o kodach kontrolnych terminala.
+Ten modu³ jest otoczk± dla wywo³ywania polecenia tput, która pozwala
+uzyskaæ informacje o kodach steruj±cych terminala.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
 
 %{?with_tests:%{__make} test}
@@ -48,4 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitelib}/Term/Info.pm
+%{perl_vendorlib}/Term/Info.pm
