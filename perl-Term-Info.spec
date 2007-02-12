@@ -6,7 +6,7 @@
 %define	pdir	Term
 %define	pnam	Info
 Summary:	Term::Info - Perl wrapper for ncurses tput
-Summary(pl):	Term::Info - Perlowa przej¶ciówka dla ncurses tput
+Summary(pl.UTF-8):   Term::Info - Perlowa przejÅ›ciÃ³wka dla ncurses tput
 Name:		perl-Term-Info
 Version:	1.1
 Release:	1
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module is a wrapper for tput command, that allows you to get
 information about terminal control codes.
 
-%description -l pl
-Ten modu³ jest otoczk± dla wywo³ywania polecenia tput, która pozwala
-uzyskaæ informacje o kodach steruj±cych terminala.
+%description -l pl.UTF-8
+Ten moduÅ‚ jest otoczkÄ… dla wywoÅ‚ywania polecenia tput, ktÃ³ra pozwala
+uzyskaÄ‡ informacje o kodach sterujÄ…cych terminala.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
