@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	Term
 %define	pnam	Info
+%include	/usr/lib/rpm/macros.perl
 Summary:	Term::Info - Perl wrapper for ncurses tput
 Summary(pl.UTF-8):	Term::Info - Perlowa przejściówka dla ncurses tput
 Name:		perl-Term-Info
@@ -15,8 +15,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a2725f773d13f37921a371604517088a
+URL:		http://search.cpan.org/dist/Term-Info/
 BuildRequires:	perl-devel
-BuildRequires:	rpm-perlprov 
+BuildRequires:	rpm-perlprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
