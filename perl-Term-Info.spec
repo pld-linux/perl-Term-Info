@@ -4,7 +4,6 @@
 
 %define	pdir	Term
 %define	pnam	Info
-%include	/usr/lib/rpm/macros.perl
 Summary:	Term::Info - Perl wrapper for ncurses tput
 Summary(pl.UTF-8):	Term::Info - Perlowa przejściówka dla ncurses tput
 Name:		perl-Term-Info
