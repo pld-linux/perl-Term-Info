@@ -8,7 +8,7 @@ Summary:	Term::Info - Perl wrapper for ncurses tput
 Summary(pl.UTF-8):	Term::Info - Perlowa przejściówka dla ncurses tput
 Name:		perl-Term-Info
 Version:	1.1
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
